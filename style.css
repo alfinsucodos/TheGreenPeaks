@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat'sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -765,3 +765,39 @@ nav a.active {
         margin-bottom: 4rem;
     }
 }
+
+/* Sección de contacto / llamada a la acción */
+.contact-section {
+    padding: 5rem 0;
+    background-color: #f4f7f5;
+    text-align: center;
+    border-top: 1px solid #e2ebe5;
+}
+
+.contact-text {
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+    color: #555555;
+    font-size: 1.1rem;
+}
+
+.contact-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    background: #ffffff;
+    color: #0B3A24;
+    border: 2px solid #0B3A24;
+}
+
+.secondary-btn:hover {
+    background: #0B3A24;
+    color: #ffffff;
+}
+
+
