@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificación y ROI | The Green Peaks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">The Green Peaks</div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="planificacion.html">Planificación</a>
+                <a href="instrucciones.html">Instrucciones</a>
+                <a href="nosotros.html">Nosotros</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Planificación de Cultivo y Calculadora de ROI</h1>
+            <p>Calcula la cantidad óptima de hardware para tu terreno, visualiza la distribución geométrica y mide tu retorno de inversión.</p>
+        </div>
+    </section>
+
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calc-grid">
+                
+                <!-- Formulario de Entrada -->
+                <div class="calc-form reveal">
+                    <h2>Dimensiones del Predio</h2>
+                    <p class="subtitle">Ingresa la superficie de tu huerto o invernadero en metros cuadrados (m²).</p>
+                    
+                    <div class="input-group">
+                        <label for="sqmeters">Superficie a proteger (m²):</label>
+                        <input type="number" id="sqmeters" value="12" min="1" step="1">
+                    </div>
+                    
+                    <button class="btn" id="calc-btn" style="width: 100%; margin-top: 1rem;">Calcular Infraestructura Óptima</button>
+
+                    <div class="specs-box">
+                        <h4>Restricciones de Prototipo:</h4>
+                        <ul>
+                            <li>Conexión: <strong>Jumper Cables (Corto Alcance)</strong></li>
+                            <li>Radio por clúster: <strong>1.0 Metro</strong> (~3.14 m² de área)</li>
+                            <li>Límite de expansión por nodo central: <strong>3 Satélites</strong></li>
+                            <li>Precio AgroNode Central: <strong>$45.000 CLP</strong></li>
+                            <li>Precio Satélite Diferencial: <strong>$7.500 CLP</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Resultados Financieros y Técnicos -->
+                <div class="calc-results reveal">
+                    <h2>Presupuesto y Distribución Real</h2>
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <span class="res-label">Nodos Centrales</span>
+                            <span class="res-value" id="res-nodes">--</span>
+                        </div>
+                        <div class="result-card">
+                            <span class="res-label">Satélites Totales</span>
+                            <span class="res-value" id="res-satellites">--</span>
+                        </div>
+                        <div class="result-card highlight">
+                            <span class="res-label">Inversión Estimada</span>
+                            <span class="res-value" id="res-cost">--</span>
+                        </div>
+                        <div class="result-card savings">
+                            <span class="res-label">Ahorro vs Tradicional</span>
+                            <span class="res-value" id="res-savings">--</span>
+                        </div>
+                    </div>
+                    <p class="roi-text">📉 <strong>Asignación Dinámica:</strong> El sistema calcula cuántas extensiones requiere exactamente el último clúster para no gastar presupuesto en sensores redundantes.</p>
+                </div>
+
+            </div>
+
+            <!-- Gráfico / Diagrama de distribución -->
+            <div class="visual-layout-box reveal">
+                <h2>Malla Estructural del Ecosistema Distribuidor</h2>
+                <p>Cada tarjeta representa un clúster de hardware. La forma geométrica cambia según la cantidad de extensiones satélites conectadas físicamente a las GPIO de ese nodo central específico.</p>
+                
+                <div class="grid-container">
+                    <div class="mesh-grid" id="mesh-grid">
+                        <!-- Generado dinámicamente por JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 The Green Peaks. Soluciones de precisión para el agro chileno.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

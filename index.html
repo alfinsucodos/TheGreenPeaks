@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Green Peaks | AgroNode Precision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">The Green Peaks</div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="planificacion.html">Planificación</a>
+                <a href="instrucciones.html">Instrucciones</a>
+                <a href="nosotros.html">Nosotros</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="anim-fade-in">Revolución Agrícola con AgroNode</h1>
+            <p class="anim-fade-in">Monitoreo inteligente y predictivo de plagas. Diseñado para combatir el pulgón mediante análisis microclimático diferencial de bajo costo.</p>
+            <a href="productos.html" class="btn anim-fade-in">Explorar Ecosistema</a>
+        </div>
+    </section>
+
+    <!-- Características (Features) -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title reveal">Características Destacadas</h2>
+            
+            <div class="feature-row reveal">
+                <div class="feature-text">
+                    <span class="feature-number">01</span>
+                    <h3>Análisis de Gradiente Térmico</h3>
+                    <p>Monitorea variaciones climáticas milimétricas entre diferentes alturas o zonas de la planta. Los pulgones eligen sectores específicos basados en décimas de grado Celsius; AgroNode localiza estos focos antes de que se propague la plaga.</p>
+                </div>
+                <div class="feature-image-box">
+                    <img src="GraficoHumedadApp.jpg" alt="Análisis de Gradiente Térmico" class="feature-img">
+                </div>
+            </div>
+
+            <div class="feature-row reverse reveal">
+                <div class="feature-text">
+                    <span class="feature-number">02</span>
+                    <h3>Estrés Hídrico Focalizado</h3>
+                    <p>Las raíces secas debilitan las defensas naturales del cultivo, atrayendo colonias enteras de áfidos. Gracias a los sensores distribuidos de forma diferencial, el sistema identifica qué hileras específicas requieren riego urgente.</p>
+                </div>
+                <div class="feature-image-box">
+                    <img src="GraficoTemperaturaApp.jpg" alt="Detección de Estrés Hídrico" class="feature-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flujo de Trabajo (Workflow) -->
+    <section id="workflow" class="workflow-section">
+        <div class="container">
+            <h2 class="section-title reveal">Flujo de Trabajo del Sistema</h2>
+            <div class="workflow-grid">
+                <div class="step reveal">
+                    <div class="step-icon">1</div>
+                    <h4>Captura de Datos</h4>
+                    <p>Los sensores leen el microclima local y el satélite envía su telemetría diferencial al AgroNode Central.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-icon">2</div>
+                    <h4>Procesamiento</h4>
+                    <p>El ESP32 empaqueta las lecturas térmicas e hídricas en una cadena JSON optimizada para bajo ancho de banda.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-icon">3</div>
+                    <h4>Análisis de IA</h4>
+                    <p>Subes la foto desde tu teléfono; nuestro sistema cruza la imagen con los datos de las hileras de sensores para predecir brotes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 The Green Peaks. Soluciones de precisión para el agro chileno.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

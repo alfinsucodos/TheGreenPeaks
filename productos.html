@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | The Green Peaks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">The Green Peaks</div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="planificacion.html">Planificación</a>
+                <a href="instrucciones.html">Instrucciones</a>
+                <a href="nosotros.html">Nosotros</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nuestro Catálogo de Hardware</h1>
+            <p>Tecnología modular diseñada para agricultores que buscan optimizar recursos y erradicar plagas de forma inteligente.</p>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="grid">
+                <!-- AgroNode Central -->
+                <div class="card premium reveal">
+                    <div class="card-image-placeholder">
+                        <img src="AgroNodeCentral.png" alt="AgroNode Central">
+                    </div>
+                    <h3>AgroNode Central</h3>
+                    <p class="price">Nodo Principal Inteligente</p>
+                    <ul>
+                        <li>Cerebro con tecnología ESP32 nativa</li>
+                        <li>Sensor de humedad de suelo local de precisión</li>
+                        <li>Módulo DHT11 de temperatura/humedad ambiente</li>
+                        <li>Transmisión directa por Wi-Fi hacia tu aplicación Java</li>
+                    </ul>
+                </div>
+
+                <!-- Satélite Diferencial -->
+                <div class="card reveal">
+                    <div class="card-image-placeholder">
+                        <img src="AgroNodeSatellite.png" alt="Satélite Diferencial">
+                    </div>
+                    <h3>Satélite Diferencial</h3>
+                    <p class="price">Extensión Multipunto Cableada</p>
+                    <ul>
+                        <li>Conexión física simplificada mediante bus analógico</li>
+                        <li>Lectura remota de humedad de suelo y temperatura aérea</li>
+                        <li>Expansión escalable usando las GPIO libres del nodo central</li>
+                        <li>Económico: no requiere comprar microcontroladores extra</li>
+                    </ul>
+                </div>
+
+                <!-- Kit de Expansión Avanzado -->
+                <div class="card reveal">
+                    <div class="card-image-placeholder">
+                        <img src="https://picsum.photos" alt="Accesorios">
+                    </div>
+                    <h3>Sensores Especializados</h3>
+                    <p class="price">Complementos de Diagnóstico</p>
+                    <ul>
+                        <li>Soporte para sensores de calidad de aire (MQ-135)</li>
+                        <li>Integración de sensores de luz (LDR) para dosel de hojas</li>
+                        <li>Sondas térmicas de suelo a prueba de agua (DS18B20)</li>
+                        <li>Compatibilidad nativa con la app de The Green Peaks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 The Green Peaks. Soluciones de precisión para el agro chileno.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
