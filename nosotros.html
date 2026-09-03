@@ -5,6 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros | The Green Peaks</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom layout adjustments to fill space dynamically */
+        .about-hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .full-width-card {
+            width: 100%;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-sizing: border-box;
+        }
+
+        .two-column-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card-box {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero-grid, .two-column-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -30,17 +69,41 @@
 
     <section class="about-section">
         <div class="container">
-            <div class="about-grid">
+            
+            <div class="about-hero-grid">
                 <div class="about-text reveal">
                     <h2>Nuestra Misión</h2>
-                    <p>En **The Green Peaks**, creemos que la tecnología agrícola de punta no debería ser un privilegio exclusivo de las grandes corporaciones multimillonarias. Nos dedicamos a diseñar hardware modular y algoritmos de Inteligencia Artificial que permitan a medianos y pequeños agricultores proteger sus plantaciones contra amenazas críticas como el pulgón.</p>
+                    <p>En The Green Peaks, creemos que la tecnología agrícola de punta no debería ser un privilegio exclusivo de las grandes corporaciones multimillonarias. Nos dedicamos a diseñar hardware modular y algoritmos de Inteligencia Artificial que permitan a medianos y pequeños agricultores proteger sus plantaciones contra amenazas críticas como el pulgón.</p>
                     <br>
                     <p>Nuestra filosofía se basa en la optimización de recursos: usar componentes eficientes como el ESP32 y arquitecturas diferenciales para multiplicar el área de monitoreo reduciendo los costos de implementación a menos de la mitad del estándar del mercado.</p>
                 </div>
                 <div class="about-image reveal">
-                    <img src="https://picsum.photos" alt="Equipo de The Green Peaks" class="feature-img">
+                    <img src="nosotrosimagen.png" alt="Equipo de The Green Peaks" class="feature-img">
                 </div>
             </div>
+
+            <div class="full-width-card reveal">
+                <h2>El Desafío en el Campo Chileno</h2>
+                <p>Las zonas rurales de Chile enfrentan constantemente dos grandes limitaciones: la conectividad deficiente e inestable y los altos costos operativos para implementar tecnología agrícola moderna. Estas barreras dejan vulnerable la producción de pequeños y medianos agricultores frente a eventos climáticos y plagas destructivas.</p>
+            </div>
+
+            <div class="two-column-grid">
+                <div class="card-box reveal">
+                    <h2>Tecnología Bluetooth BLE</h2>
+                    <p>Para superar la falta de señal móvil en el terreno, hemos desarrollado una red local autónoma interconectada mediante Bluetooth BLE. Este enfoque elimina la dependencia de costosas suscripciones celulares en cada punto de control, permitiendo transferir datos críticos de manera estable y continua sin elevar el gasto energético.</p>
+                </div>
+
+                <div class="card-box reveal">
+                    <h2>Arquitectura Modular</h2>
+                    <p>Nuestro sistema se compone de una unidad AgroNode Central conectada a múltiples nodos Satélite distribuidos estratégicamente por la parcela. Cada nodo incorpora sensores de humedad de suelo que registran la condición hídrica precisa del terreno, enviando lecturas constantes a la central para alertar de forma preventiva.</p>
+                </div>
+            </div>
+
+            <div class="full-width-card reveal">
+                <h2>Impacto y Sostenibilidad Agrícola</h2>
+                <p>Al democratizar el acceso a la telemetría en Chile, permitimos que los agricultores tomen decisiones fundamentadas en tiempo real. Esto se traduce en una reducción drástica del uso innecesario de plaguicidas, un consumo eficiente del agua de riego y una mayor protección del rendimiento de cada cosecha sin comprometer el presupuesto del productor.</p>
+            </div>
+
         </div>
     </section>
 
